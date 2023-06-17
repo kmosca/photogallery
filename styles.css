@@ -1,0 +1,213 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0 auto;
+    min-width: 485px;
+    max-width: 1300px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #000000;
+}
+
+header{
+    background-color: #ffffff;
+    color:#007d7b;
+    padding-top: 1px;
+    min-width: 485px;
+}
+header h1{
+    text-align: center;
+}
+nav{
+    background-color: #000000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    
+}
+nav li{
+    list-style-type: none;
+    position: relative;
+    right: 15px;
+}
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5em;
+}
+nav a:hover{
+    background-color: #007d7b;
+}
+
+main{
+    position: relative;
+    bottom: 26px;
+    background-color: #ffffff;
+    
+}
+footer{
+    color: #ffffff;
+    text-align: center;
+}
+#about h2{
+    padding-top: 10px;
+}
+#about h2, #gallery h2{
+    text-align: center;
+}
+#photographs{
+    text-align: center;
+}
+#about, #gallery{
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+
+#contact{
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+}
+button{
+    background-color:#007d7b;
+    color: #ffffff;
+    width: 30%;
+    border-radius: 10px;
+    height: 30px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+input{
+    width: 80%;
+    padding: 5px;
+}
+label{
+    position: absolute;
+    left: 60px;
+}
+textarea{
+    width: 80%;
+    height: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    padding:5px;
+}
+p{
+    font-size: 1.25em;
+}
+figcaption, label, input, small {
+    font-size: 1em;
+}
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2em;
+}
+#chile figcaption, #hawaii figcaption,#moab figcaption{
+    position: relative;
+    bottom: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+#italy figcaption{
+    position: relative;
+    bottom: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+}
+#guatemala figcaption, #wyoming figcaption{
+    position: relative;
+    bottom: 265px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+#usa figcaption, #uk figcaption, #switzerland figcaption, #rocky figcaption{
+    position: relative;
+    bottom: 265px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+}
+#iran figcaption, #ireland figcaption{
+    position: relative;
+    bottom: 615px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+::placeholder{
+    color: #007d7b;
+    font-size: 1em;
+    font-weight: bold;
+}
+button:hover{
+    background-color: #ffffff;
+}
+nav li:last-child{
+    position: absolute;
+    top: 5600px;
+    right:30px;
+    border: 2px solid #ffffff;
+    padding: 5px;
+    width: 50px;
+    text-align: center;
+}
+
+@media screen and (min-width: 880px) { /*CHANGE 700PX TO 485PX 700 IS EASY TO EDIT*/
+    #photographs{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    nav li:last-child{
+        position: absolute;
+        top: 3400px;
+    }
+    nav ul{
+        justify-content: center;
+    }
+    nav li{
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+    header h1{
+        text-align: left;
+        margin-left: 10px;
+    }
+    label{
+        position: absolute;
+        left: 100px;
+    }
+    
+}
+
+@media screen and (min-width: 1300px) {
+    #photographs{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    nav ul{
+        justify-content: right;
+    }
+    nav li:last-child{
+        position: absolute;
+        top: 2450px;
+    }
+    label{
+        position: absolute;
+        left: 150px;
+    }
+}
+
